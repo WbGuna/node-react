@@ -8,6 +8,7 @@ import MinMax from './components/MinMax';
 import TesteBotao from './components/testebotao/botao';
 import Titulo from './components/Titulo';
 import Botao from './components/Botao';
+import Contador from './components/Contador';
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       <TesteBotao label="Finalizar" backColor="blue"/>
       <Titulo principal="Olá" secundario="Tudo bem"/>
       <Botao/>
-
+      <Contador inicial={50} passo={10}/>
+      <Contador inicial={25} passo={25}/>
     </div>
     
   )
