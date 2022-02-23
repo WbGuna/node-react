@@ -27,8 +27,8 @@ function App() {
       <TesteBotao label="Finalizar" backColor="blue"/>
       <Titulo principal="Olá" secundario="Tudo bem"/>
       <Botao/>
-      <Contador inicial={50} passo={10}/>
-      <Contador inicial={25} passo={25}/>
+      <Contador inicial={50} passo={10} limite={100}/>
+      <Contador inicial={25} passo={25} limite={100}/>
     </div>
     
   )

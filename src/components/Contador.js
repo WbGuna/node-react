@@ -4,9 +4,10 @@ function Contador(props){
 
 
     const [numero, setNumero] = useState(props.inicial);
+    
   
     const incremento = () => {
-        if(numero == 100){
+        if(numero == props.limite){
             alert("Aqui é o limite")
             return
         }
