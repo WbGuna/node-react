@@ -26,7 +26,6 @@ function App() {
       <TesteBotao label="Finalizar" backColor="blue"/>
       <Titulo principal="Olá" secundario="Tudo bem"/>
       <Botao/>
-
     </div>
     
   )
