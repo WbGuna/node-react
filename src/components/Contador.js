@@ -16,7 +16,7 @@ function Contador(props){
     }
 
     const decremento = () => {
-        if(numero == 0){
+        if(numero == props.inicial){
             alert("Desculpe menos não vai");
             return
         }
