@@ -16,6 +16,13 @@ import Carro from './components/carro/Carro';
 import Pai from './components/direta/Pai'
 import Pai1 from './components/indireta/Pai'
 import Carro2 from './components/carro2/Carro'
+import Familia from './components/children/Familia'
+import Membro from './components/children/Membro'
+import ParImpar from './components/condicional/ParImpar'
+import UsuarioLogado from './components/condicional/UsuarioLogado'
+import ListaProdutos from './components/lista/ListaProdutos'
+import DigiteSeuNome from './components/DigiteSeuNome'
+import CadastroNome from './components/classe/CadastroNome'
 
 
 function App() {
@@ -70,8 +77,30 @@ function App() {
             combustivel="Gasolina" aro="14" cambio="4 Marchas" potencia="70cv" preco="12.000,00" roza3/>
         </ul>
       </div>
+      <hr/>
+      <Familia>
+        <Membro nome="Bildor" sobrenome="Guna"/>
+        <Membro nome="Iros" sobrenome="Guna"/>
+        <Membro nome="Batros" sobrenome="Guna"/>
+      </Familia>
+      <hr/>
+      <ParImpar num={2}/>
+      <ParImpar num={3}/>
+      <hr/>
+      {/* A linha acima é passando um objeto com atributos via props ver no IF e UsuarioLogado */}
+      <UsuarioLogado usuario={{nome: 'Roberval', email: 'roberio@roberval.com'}}/> 
+      <UsuarioLogado usuario={{nome: 'Roberval'}}/>
+      <UsuarioLogado usuario={{email: 'roberio@roberval.com'}}/>
+      <UsuarioLogado usuario={null}/>
+      <UsuarioLogado usuario={{}}/>
+      <UsuarioLogado usuario={{nome: 'Primo', email: 'primo@primo.com'}}/>
+      <hr/>
 
-      
+      <ListaProdutos/>
+      <hr/>
+      <DigiteSeuNome/>
+      <hr/>
+      <CadastroNome nome="Roberval"/>
     </div>
     
   )
