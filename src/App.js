@@ -15,6 +15,7 @@ import Produto from './components/produto/Produto';
 import Carro from './components/carro/Carro';
 import Pai from './components/direta/Pai'
 import Pai1 from './components/indireta/Pai'
+import Carro2 from './components/carro2/Carro'
 
 
 function App() {
@@ -59,6 +60,18 @@ function App() {
         combustivel="Gasolina" aro="14" cambio="4 Marchas" potencia="70cv" preco="12.000,00"/>
       <Pai/>
       <Pai1/>
+   
+      <div>
+        <ul className='item3'>
+            <Carro2 modelo="Brasilia" marca="VW" cor="Azul" ano="1986" portas="3" 
+            combustivel="Gasolina" aro="14" cambio="4 Marchas" potencia="70cv" preco="12.000,00"/>
+
+            <Carro2 modelo="Brasilia" marca="VW" cor="Azul" ano="1986" portas="3" 
+            combustivel="Gasolina" aro="14" cambio="4 Marchas" potencia="70cv" preco="12.000,00" roza3/>
+        </ul>
+      </div>
+
+      
     </div>
     
   )

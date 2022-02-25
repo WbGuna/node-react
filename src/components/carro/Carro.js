@@ -16,7 +16,7 @@ function Carro(props) {
             <div className={corFundo}>Marca: {props.marca}</div>
             <div className={corFundo}>Cor: {props.cor}</div>
             <div className={corFundo}>Ano: {props.ano}</div>
-            <div className={corFundo}>Portas: {props.postas}</div>
+            <div className={corFundo}>Portas: {props.portas}</div>
             <div className={corFundo}>Combustivel: {props.combustivel}</div>
             <div className={corFundo}>Aro: {props.aro}</div>
             <div className={corFundo}>Cambio: {props.cambio}</div>
